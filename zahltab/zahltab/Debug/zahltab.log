@@ -1,0 +1,4 @@
+﻿  zahltab.c
+c:\users\surfer\desktop\zahltab\zahltab\zahltab.c(48): warning C4477: "printf": Die Formatzeichenfolge "%2.lf" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "unsigned int" auf.
+c:\users\surfer\desktop\zahltab\zahltab\zahltab.c(49): warning C4477: "printf": Die Formatzeichenfolge "%2.f" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "unsigned int" auf.
+  zahltab.vcxproj -> C:\Users\Surfer\Desktop\zahltab\Debug\zahltab.exe
