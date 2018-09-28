@@ -49,6 +49,7 @@ struct bruch_s addition(struct bruch_s b1, struct bruch_s b2)
 	produkt.n_kurz = produkt.z / produkt.n;
 	
 	produkt.rest_kurz = produkt.n - (produkt.z * produkt.n_kurz);*/
+	//u qt
 	
 	return sum;
 }
