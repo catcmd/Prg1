@@ -64,17 +64,19 @@ struct bruch_s addition(struct bruch_s b1, struct bruch_s b2)
 	produkt.rest_kurz = produkt.n - (produkt.z * produkt.n_kurz);*/
 	//u qt
 	
-
+	sum = kuerz(sum); //der komplette struct bruch_s sum wird and kuerz übergeben die funktion darf sich dann den rest rauspicken
 
 	return sum;
 }
 
-struct bruch_s subtraktion(struct bruch_s b1, struct bruch_s b2)
+struct bruch_s subtraktion(struct bruch_s b1, struct bruch_s b2)//Parameter sind platz halter/ eingänge der funktionen über gibt man und Variablen definiert man
 {
 	struct bruch_s dif;
 
 	dif.z = b1.z*b2.n - b2.z*b1.n;
 	dif.n = b1.n*b2.n;
+
+
 	
 	return dif;
 }
@@ -99,20 +101,33 @@ struct bruch_s division(struct bruch_s b1, struct bruch_s b2)
 	return quot;
 }
 
-struct bruch_s kuerz(struct bruch_s value)
+struct bruch_s kuerz(struct bruch_s value)// Value ist ein Platzhalter für einzugebende structs
 {
+	int gcd = ggt(value.n, value.z);
+
+	value.n = value.n / gcd;
+	value.z = value.z / gcd;
+	
+	
 	return value;
 
 }
 
-int ggt(int value, int value2)
+int ggt(int value, int value2)//hier werden einzlene in values aus dem struct bruch_s übergeben also nenner und zähler hier primitive datentypen
 {
 	int ggt = 0;
 	int a = value;
 	int b = value2;
 
-	
-	
+	while (b != 0)
+	{
+		a %= b;
+		a ^= b;
+		b ^= a;
+		a ^= b;
+	}
 
+	ggt = a;
+	
 	return ggt;
 }
