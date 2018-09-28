@@ -1,7 +1,1 @@
 ﻿  mainfile.c
-c:\users\surfer\desktop\workspace\prg1\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "sum": Unreferenzierte lokale Variable
-c:\users\surfer\desktop\workspace\prg1\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "prod": Unreferenzierte lokale Variable
-c:\users\surfer\desktop\workspace\prg1\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "quot": Unreferenzierte lokale Variable
-c:\users\surfer\desktop\workspace\prg1\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "dif": Unreferenzierte lokale Variable
-c:\users\surfer\desktop\workspace\prg1\bruchrechnung\bruchrechnung\mainfile.c(95): warning C4101: "ggt": Unreferenzierte lokale Variable
-c:\users\surfer\desktop\workspace\prg1\bruchrechnung\bruchrechnung\mainfile.c(96): warning C4716: "ggt": Muss einen Wert zurückgeben

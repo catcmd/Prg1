@@ -28,9 +28,22 @@ int main()
 
 	printf("Bitte Zaehler und Nenner Bruch 1 eingeben: \n");
 	scanf("%i %i", &b1.z, &b1.n);
-
 	printf("Bitte Zaehler und Nenner Bruch 2 eingeben: \n");
 	scanf("%i %i", &b2.z, &b2.n);
+
+	sum = addition(b1, b2);
+	dif = subtraktion(b1, b2);
+	prod = multiplikation(b1, b2);
+	quot = division(b1, b2);
+
+	printf("Summe =	%i/%i \n", sum.z, sum.n);
+	printf("Differenz = %i/%i \n", dif.z, dif.n);
+	printf("Multi = %i/%i \n", prod.z, prod.n);
+	printf("Div	= %i/%i \n", quot.z, quot.n);
+
+	ggt(b1.n, b2.n);
+
+
 
 	system("pause");
 	return(0);
@@ -51,6 +64,8 @@ struct bruch_s addition(struct bruch_s b1, struct bruch_s b2)
 	produkt.rest_kurz = produkt.n - (produkt.z * produkt.n_kurz);*/
 	//u qt
 	
+
+
 	return sum;
 }
 
@@ -90,7 +105,14 @@ struct bruch_s kuerz(struct bruch_s value)
 
 }
 
-struct bruch_s ggt(struct bruch_s b1, struct bruch_s b2)
+int ggt(int value, int value2)
 {
-	int ggt;
+	int ggt = 0;
+	int a = value;
+	int b = value2;
+
+	
+	
+
+	return ggt;
 }
