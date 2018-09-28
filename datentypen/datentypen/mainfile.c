@@ -58,7 +58,7 @@ char kleinstesZeichen(char c1, char c2, char c3, char c4)//Char Zeichen werden v
 	char min;
 
 	char Zeichensatz[4] = { c1, c2, c3, c4 }; //Chars werden auf einen Char String geschmissen
-
+	//hello
 	min = Zeichensatz[0];
 
 	for (int counter = 1; counter < sizeof(Zeichensatz); counter++) /*Durch inkludieren der #include <string.h> 
