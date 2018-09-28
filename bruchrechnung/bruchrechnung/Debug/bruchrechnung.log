@@ -1,0 +1,9 @@
+﻿  mainfile.c
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "sum": Unreferenzierte lokale Variable
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "prod": Unreferenzierte lokale Variable
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "quot": Unreferenzierte lokale Variable
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(27): warning C4101: "dif": Unreferenzierte lokale Variable
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(95): warning C4101: "ggt": Unreferenzierte lokale Variable
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(89): warning C4700: Die nicht initialisierte lokale Variable "value" wurde verwendet.
+c:\users\surfer\desktop\bruchrechnung\bruchrechnung\mainfile.c(96): warning C4716: "ggt": Muss einen Wert zurückgeben
+  bruchrechnung.vcxproj -> C:\Users\Surfer\Desktop\bruchrechnung\Debug\bruchrechnung.exe
