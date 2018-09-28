@@ -84,10 +84,8 @@ struct bruch_s division(struct bruch_s b1, struct bruch_s b2)
 	return quot;
 }
 
-struct bruch_s kuerz(/*struct bruchs_s value*/)
+struct bruch_s kuerz(struct bruch_s value)
 {
-	struct bruch_s value;
-
 	return value;
 
 }
