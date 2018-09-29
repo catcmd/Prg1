@@ -1,0 +1,9 @@
+﻿  exp.c
+c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.c(43): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.c(45): warning C4244: "Funktion": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.c(47): warning C4244: "Funktion": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.c(55): warning C4142: "obergrenzeEinlesen": Neudefinition eines Typs ohne Auswirkungen
+  c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.h(12): note: Siehe Deklaration von "obergrenzeEinlesen"
+c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.c(68): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\surfer\desktop\workspace\prg1\exp\exp\exp.c(79): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+  exp.vcxproj -> C:\Users\Surfer\Desktop\workspace\Prg1\exp\Debug\exp.exe
