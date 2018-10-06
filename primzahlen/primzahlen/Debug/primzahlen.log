@@ -1,2 +1,5 @@
-﻿  mainfile.c
+﻿  funktionen.c
+c:\users\surfer\desktop\workspace\prg1\primzahlen\primzahlen\funktionen.c(30): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
+  mainfile.c
+  Code wird generiert...
   primzahlen.vcxproj -> C:\Users\Surfer\Desktop\workspace\Prg1\primzahlen\Debug\primzahlen.exe

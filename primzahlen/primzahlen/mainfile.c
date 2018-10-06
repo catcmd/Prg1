@@ -8,16 +8,17 @@
 
 #include <stdio.h>  /* Standard Input/Output  z.B. scanf, printf */
 #include <stdlib.h>   /* Standard-Bibliothek, z.B. für system       */
+#include <math.h>
 #include "funktionen.h"
-#define PRIM 1
-#define nPRIM 0
+
 
 
 int main () 
 {
+	//Variablen declaration 
 	//Variablen Def.
 
-	unsigned int fill[OG - 1][2];
+	struct zahl_s zahlen[OG - 1]; //array an zahlen allocieren der speicher größe
 	int num = 2;
 
 	strich(50,'-');
@@ -28,9 +29,14 @@ int main ()
 
 	for (int counter = 0; counter < OG-1; counter++)
 	{
-		fill[counter][0] = num++;
-		fill[counter][1] = PRIM;
+		zahlen[counter].wert = num++;
+		zahlen[counter].istPrim = true;
 	}
+
+	//Init von sieb mit übergabe des Pointers des array zahlen
+	sieb(zahlen);
+
+	ausgabe(zahlen); //Init ausgabe mit array zahlen
 
 
 	printf("\nServus! \n");
