@@ -1,0 +1,10 @@
+﻿  funktionen.c
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(27): warning C4013: "srand" undefiniert; Annahme: extern mit Rückgabetyp int
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(27): warning C4013: "time" undefiniert; Annahme: extern mit Rückgabetyp int
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(35): warning C4013: "rand" undefiniert; Annahme: extern mit Rückgabetyp int
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(40): warning C4013: "system" undefiniert; Annahme: extern mit Rückgabetyp int
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(29): warning C4047: "Initialisierung": Anzahl der Dereferenzierungen bei "char" und "char [2]" unterschiedlich
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(62): warning C4018: ">": Konflikt zwischen "signed" und "unsigned"
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(66): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\surfer\desktop\workspace\prg1\zahlenraten\zahlenraten\funktionen.c(53): warning C4189: "antwort": Lokale Variable ist initialisiert aber nicht referenziert
+  zahlenraten.vcxproj -> C:\Users\Surfer\Desktop\workspace\Prg1\zahlenraten\Debug\zahlenraten.exe

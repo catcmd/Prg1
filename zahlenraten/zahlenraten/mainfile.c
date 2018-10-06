@@ -13,9 +13,13 @@
 
 int main () 
 {
+	zahlenraten(OBERGRENZE);
+
+
 	strich(50,'-');
 	printf("Zahlenraten\n");
 	strich(50,'-');
+
 
 
 	printf("Servus! \n");
