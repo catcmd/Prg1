@@ -20,6 +20,10 @@ int main ()
 	printf("Eurotest\n");
 	strich(50,'-');
 
+	einlesen(banknotenr);
+	quersumme(banknotenr);
+
+
 	printf("\nServus! \n");
 	system("pause");
 	return 0;

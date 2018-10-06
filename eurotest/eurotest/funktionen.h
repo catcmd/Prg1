@@ -18,6 +18,8 @@ typedef enum
 
 /* Prototypen der benötigten Funktionen */
 void strich (int n, char c); /* gibt n mal das Zeichen c aus  */
+unsigned int einlesen(char *inputArray);
+unsigned int quersumme(char *inputArray);
 
 
 #endif

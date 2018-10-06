@@ -28,17 +28,21 @@ unsigned int einlesen(char *inputArray)
 	printf("Bitte geben sie die Banknoten Nummer ein: \n");
 	scanf("%s", &inputBuffer);//copy into tmp Buffer so memory isn't killed
 
-	if (strlen(inputBuffer) == strlen(inputArray))
-	{
-		//if strlen inputBuffer has the same length as inputArray 
-		//		destination, source
-		strcpy(inputArray, inputBuffer);
-	}
+	//if strlen inputBuffer has the same length as inputArray 
+	//		destination, source, number of characters to be copied
+	strncpy(inputArray, inputBuffer, 12);
 	
 }
 
 unsigned int quersumme(char *inputArray)
 {
+	int sum = 0;
 
+	for (int counter = 0; counter < strlen(inputArray); counter++)
+	{
+		sum = (int)inputArray[counter] + sum;
+	}
+
+	return sum;
 }
 
