@@ -13,6 +13,9 @@
 
 int main () 
 {
+	//Variablen Def
+	char banknotenr[12];
+
 	strich(50,'-');
 	printf("Eurotest\n");
 	strich(50,'-');
