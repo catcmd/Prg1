@@ -96,3 +96,32 @@ t_errcode eurotest(char *inputArray)
 
 	return error;
 }
+
+void fehlerAusgabe(t_errcode knoblauch)
+{
+	switch (knoblauch)
+	{
+	case ec_ok:
+		printf("Seriennummer gültisch!\n");
+		break;
+	case ec_pz_falsch:
+		printf("Prüfziffer falsch!\n");
+		break;
+	case ec_zukurz:
+		printf("Seriennummer zu kurz!\n");
+		break;
+	case ec_zulang:
+		printf("Seriennummer zu lang!\n");
+		break;
+	case ec_LCfalsch:
+		printf("Ländercode ist kein Großbuchstabe!\n");
+		break;
+	case ec_SNkeineZiffer:
+		printf("10-Stellieg Seriennummer oder Prüfziffer enthält Zeichen, die nicht Ziffern sind!\n");
+		break;
+	default:
+		printf("Unbekannte Eingabe!\n");
+	}
+
+	return 0;	
+}
