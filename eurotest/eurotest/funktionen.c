@@ -46,3 +46,53 @@ unsigned int quersumme(char *inputArray)
 	return sum;
 }
 
+unsigned int prufziffer(int quersumme, int zuPruef)
+{
+	int prufNr = 0;
+
+	prufNr = (quersumme - zuPruef) % 9;
+	if (prufNr != 0)
+	{
+		prufNr = 9 - prufNr;
+	}
+
+	return prufNr;
+}
+
+t_errcode eurotest(char *inputArray)
+{
+	t_errcode error;
+	int querS, prufZ;
+
+	querS = quersumme(inputArray);
+	prufZ = prufziffer(querS, inputArray[11]);
+
+	
+	if (prufZ != inputArray[11])
+	{
+		error = ec_pz_falsch;
+	}
+	else if (strlen(inputArray) < 12)
+	{
+		error = ec_zukurz;
+	}
+	else if (strlen(inputArray) > 12)
+	{
+		error = ec_zulang;
+	}
+	else if (inputArray[0] < 65 || inputArray[0] > 90)
+	{
+		error = ec_LCfalsch;
+	}
+	else if (inputArray[11] < 48 || inputArray[11] > 57)
+	{
+		error = ec_SNkeineZiffer;
+	}
+	else
+	{
+		error = ec_ok;
+	}
+	
+
+	return error;
+}

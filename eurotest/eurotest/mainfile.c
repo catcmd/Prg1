@@ -28,6 +28,7 @@ int main ()
 	//snprintf writes on a string with a cap of n or in this case sizeof(example)
 	snprintf(banknotenr, sizeof(banknotenr), "P02571225193");
 	test1 = quersumme(banknotenr);
+
 	if (test1 == 114)
 	{
 		printf("Test 1: Correct!\n");
@@ -48,8 +49,14 @@ int main ()
 		printf("Test 2: Test Failed! Output: %d\n", test2);
 	}
 
+	/**********************************************************/
+	/*	main function										  */
+	/**********************************************************/
 
-	//einlesen(banknotenr);
+	einlesen(banknotenr);
+	eurotest(banknotenr);
+	
+
 	printf("\nServus! \n");
 	system("pause");
 	return 0;

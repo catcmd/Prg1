@@ -20,6 +20,8 @@ typedef enum
 void strich (int n, char c); /* gibt n mal das Zeichen c aus  */
 unsigned int einlesen(char *inputArray);
 unsigned int quersumme(char *inputArray);
+unsigned int prufziffer(int quersumme, int zuPruef);
+t_errcode eurotest(char *inputArray);
 
 
 #endif
