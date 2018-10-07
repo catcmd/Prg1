@@ -36,11 +36,11 @@ unsigned int einlesen(char *inputArray)
 
 unsigned int quersumme(char *inputArray)
 {
-	int sum = 0;
+	int sum = (int)inputArray[0];
 
-	for (int counter = 0; counter < strlen(inputArray); counter++)
+	for (int counter = 1; counter < strlen(inputArray); counter++)
 	{
-		sum = (int)inputArray[counter] + sum;
+		sum = (inputArray[counter] - 48) + sum;
 	}
 
 	return sum;
