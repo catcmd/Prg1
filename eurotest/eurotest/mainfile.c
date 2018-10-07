@@ -49,6 +49,18 @@ int main ()
 		printf("Test 2: Test Failed! Output: %d\n", test2);
 	}
 
+	//test der eruo test function alles wird mal durchgegangen
+	snprintf(banknotenr, sizeof(banknotenr), "D4328645738");
+	fehlerAusgabe(eurotest(banknotenr));
+
+	snprintf(banknotenr, sizeof(banknotenr), "D4328645732");
+	fehlerAusgabe(eurotest(banknotenr));
+
+	snprintf(banknotenr, sizeof(banknotenr), "D4328645738d24");
+	fehlerAusgabe(eurotest(banknotenr));
+
+
+
 	/**********************************************************/
 	/*	main function										  */
 	/**********************************************************/

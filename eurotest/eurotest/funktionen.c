@@ -61,51 +61,47 @@ unsigned int prufziffer(int quersumme, int zuPruef)
 
 t_errcode eurotest(char *inputArray)
 {
-	t_errcode error;
+	t_errcode error = ec_ok; // wenn kein error code ausgelöst wird wird ec_ok returned
 	int querS, prufZ;
 
 	querS = quersumme(inputArray);
 	prufZ = prufziffer(querS, inputArray[11]);
 
-	
+	//um alle bedingungen durch zuführen muss if statt else if
 	if (prufZ != inputArray[11])
 	{
 		error = ec_pz_falsch;
 	}
-	else if (strlen(inputArray) < 12)
+	if (strlen(inputArray) < 12)
 	{
 		error = ec_zukurz;
 	}
-	else if (strlen(inputArray) > 12)
+	if (strlen(inputArray) > 12)
 	{
 		error = ec_zulang;
 	}
-	else if (inputArray[0] < 65 || inputArray[0] > 90)
+	if (inputArray[0] < 65 || inputArray[0] > 90)
 	{
 		error = ec_LCfalsch;
 	}
-	else if (inputArray[11] < 48 || inputArray[11] > 57)
+	if (inputArray[11] < 48 || inputArray[11] > 57)
 	{
 		error = ec_SNkeineZiffer;
-	}
-	else
-	{
-		error = ec_ok;
-	}
-	
+	}	
 
 	return error;
 }
 
+//Case switch für fehler ausgabe der euro function
 void fehlerAusgabe(t_errcode knoblauch)
 {
 	switch (knoblauch)
 	{
 	case ec_ok:
-		printf("Seriennummer gültisch!\n");
+		printf("Seriennummer gueltisch!\n");
 		break;
 	case ec_pz_falsch:
-		printf("Prüfziffer falsch!\n");
+		printf("Pruefziffer falsch!\n");
 		break;
 	case ec_zukurz:
 		printf("Seriennummer zu kurz!\n");
@@ -114,10 +110,10 @@ void fehlerAusgabe(t_errcode knoblauch)
 		printf("Seriennummer zu lang!\n");
 		break;
 	case ec_LCfalsch:
-		printf("Ländercode ist kein Großbuchstabe!\n");
+		printf("Laendercode ist kein Grossbuchstabe!\n");
 		break;
 	case ec_SNkeineZiffer:
-		printf("10-Stellieg Seriennummer oder Prüfziffer enthält Zeichen, die nicht Ziffern sind!\n");
+		printf("10-Stellieg Seriennummer oder Pruefziffer enthaelt Zeichen, die nicht Ziffern sind!\n");
 		break;
 	default:
 		printf("Unbekannte Eingabe!\n");
