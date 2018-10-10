@@ -1,0 +1,3 @@
+﻿  mainfile.c
+d:\git\workspace\prg1\strings_3\strings\strings\mainfile.c(24): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  strings.vcxproj -> D:\GIT\workspace\Prg1\strings_3\strings\Debug\strings.exe
